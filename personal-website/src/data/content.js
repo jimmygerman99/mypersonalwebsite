@@ -1,9 +1,11 @@
+import ResumePDF from '../assets/German_James_Resume_Fall2025.pdf';
 export const personalInfo = {
   name: 'Jimmy German',
   email: 'jgjimmy1@gmail.com',
   phone: '(440) 991-7975',
   github: 'https://github.com/jimmygerman99',
   linkedin: 'https://www.linkedin.com/in/jamesger',
+  resume: ResumePDF,
   tagline:
     'Building intelligent web applications with a focus on machine learning and full-stack development',
 };
@@ -80,5 +82,46 @@ export const experience = [
       'Conducted data analysis for carbon emissions',
       'Presented to stakeholders for future use',
     ],
+  },
+];
+
+export const timeline = [
+  {
+    year: 2002,
+    title: 'Born in Ohio',
+    event: 'Grew up into tech, travel, outdoors.',
+  },
+  {
+    year: 2019,
+    title: 'Early coding',
+    event: 'JS/C++ projects and web tools.',
+  },
+  {
+    year: 2023,
+    title: 'S-Docs Intern',
+    subtitle: 'Technical Support Engineer',
+    event: 'Customer-facing debugging & product fluency.',
+  },
+  {
+    year: 2024,
+    title: 'Travel Redemption Calculator',
+    event: 'CPP comparisons + partner mapping.',
+  },
+  {
+    year: 2024,
+    title: 'Neural Network Builder',
+    subtitle: 'Senior Design',
+    event: 'Local PyTorch + browser UI; tested node/flow.',
+  },
+  {
+    year: 2025,
+    title: 'B.S. Computer Science',
+    subtitle: 'University of Cincinnati, GPA 3.42',
+    event: 'Dean’s List; systems, full-stack, ML tooling.',
+  },
+  {
+    year: 'Now',
+    title: 'New-grad SWE + Building',
+    event: 'Shipping features; outdoorsy travel.',
   },
 ];

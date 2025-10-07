@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, ChevronDown } from 'lucide-react';
 import { personalInfo } from '../data/content';
-import headshot from '../assets/images/headshot.jpeg'; 
+import headshot from '../assets/images/headshot.jpeg';
 
-export default function Hero() {
+export default function Hero({ scrollToSection }) {
   return (
     <section id="home" className="min-h-[80vh] flex items-center px-6">
       {/* Center the whole hero block */}
@@ -85,18 +85,23 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Scroll hint */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}
           className="flex justify-center mt-10"
         >
-          <ChevronDown
-            size={28}
-            className="text-slate-500 animate-bounce"
-            aria-hidden="true"
-          />
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => scrollToSection('about')}
+            aria-label="Scroll to About"
+            className="inline-flex items-center justify-center rounded-full p-2
+                       text-slate-500 hover:text-slate-300 focus:outline-none
+                       focus-visible:ring-2 focus-visible:ring-blue-500/40"
+          >
+            <ChevronDown size={28} className="animate-bounce" />
+          </motion.button>
         </motion.div>
       </div>
     </section>

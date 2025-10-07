@@ -29,7 +29,7 @@ export default function Projects() {
               <div className="flex items-start justify-between mb-3">
                 <Code className="text-blue-400" size={24} />
                 <span
-                  className={`text-xs px-2 py-1 rounded-full ${
+                  className={`text-xs px-2 py-1 rounded -full ${
                     project.status === 'Completed'
                       ? 'bg-green-900 text-green-300'
                       : 'bg-yellow-900 text-yellow-300'

@@ -98,7 +98,7 @@ export default function About() {
           viewport={{ once: true }}
           className="text-2xl font-bold mt-16 mb-6 text-blue-400 text-center"
         >
-          Life Timeline (2002 → Now)
+          Life Timeline
         </motion.h3>
 
         <Timeline items={timeline} startLabel="2002" endLabel="Now" />

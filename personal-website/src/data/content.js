@@ -93,19 +93,25 @@ export const timeline = [
   },
   {
     year: 2019,
-    title: 'Early coding',
-    event: 'JS/C++ projects and web tools.',
+    title: 'First Coding Class',
+    event: 'Started my Coding journey learning Java in AP CS',
   },
   {
-    year: 2023,
-    title: 'S-Docs Intern',
-    subtitle: 'Technical Support Engineer',
+    year: 2020,
+    title: 'High School Diploma',
+    event: 'Graudated from Solon High School',
+  },
+  {
+    year: 2022,
+    title: 'Interned at Siemens',
+    subtitle: 'Backend Dev for the TCIN Team',
     event: 'Customer-facing debugging & product fluency.',
   },
   {
     year: 2024,
-    title: 'Travel Redemption Calculator',
-    event: 'CPP comparisons + partner mapping.',
+    title: 'Studied Abroad in Prague',
+    event:
+      'Worked on ML models, traveled the world, and collaborated with Cyrkl',
   },
   {
     year: 2024,
@@ -114,14 +120,17 @@ export const timeline = [
     event: 'Local PyTorch + browser UI; tested node/flow.',
   },
   {
-    year: 2025,
+    year: 'May 2025',
     title: 'B.S. Computer Science',
     subtitle: 'University of Cincinnati, GPA 3.42',
     event: 'Dean’s List; systems, full-stack, ML tooling.',
   },
   {
-    year: 'Now',
+    year: 'Summer 2025',
     title: 'New-grad SWE + Building',
-    event: 'Shipping features; outdoorsy travel.',
+    event: 'Working on Full Stack Odin Project + traveling the world',
+  },
+  { 
+    year: ''
   },
 ];

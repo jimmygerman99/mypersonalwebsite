@@ -13,14 +13,14 @@ export default function App() {
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    const el = document.getElementById(sectionId);
+    el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100">
       <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
-      <Hero />
+      <Hero scrollToSection={scrollToSection} />
       <About />
       <Projects />
       <Experience />

@@ -2,7 +2,6 @@ import ResumePDF from '../assets/German_James_Resume_Fall2025.pdf';
 export const personalInfo = {
   name: 'Jimmy German',
   email: 'jgjimmy1@gmail.com',
-  phone: '(440) 991-7975',
   github: 'https://github.com/jimmygerman99',
   linkedin: 'https://www.linkedin.com/in/jamesger',
   resume: ResumePDF,

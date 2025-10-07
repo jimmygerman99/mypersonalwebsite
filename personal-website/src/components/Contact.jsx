@@ -60,15 +60,6 @@ export default function Contact() {
             Email me
           </motion.a>
 
-          <a
-            href={`tel:${personalInfo.phone}`}
-            className="text-slate-400 hover:text-slate-200 inline-flex items-center gap-2"
-            title="Call me"
-          >
-            <Phone size={18} />
-            {personalInfo.phone}
-          </a>
-
           <button
             onClick={() => navigator.clipboard?.writeText(personalInfo.email)}
             className="text-sm text-slate-400 hover:text-slate-200 underline"

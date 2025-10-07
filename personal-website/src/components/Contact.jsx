@@ -53,7 +53,7 @@ export default function Contact() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href={`mailto:${personalInfo.email}?subject=Inquiry from your portfolio`}
+            href={`mailto:${personalInfo.email}?subject=${encodeURIComponent('Inquiry from your portfolio')}`}
             className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg transition-colors text-lg"
           >
             <Mail size={24} />
@@ -85,13 +85,10 @@ export default function Contact() {
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
             className="w-full text-left mx-auto bg-slate-900 border border-slate-700 rounded-xl p-6 space-y-4"
           >
-            {/* Netlify form boilerplate */}
             <input type="hidden" name="form-name" value="contact" />
             <p className="hidden">
-              {/* honeypot to deter bots */}
               <label>
                 Don’t fill this out: <input name="bot-field" />
               </label>
@@ -121,7 +118,7 @@ export default function Contact() {
                   className="block text-sm text-slate-400 mb-1"
                   htmlFor="email"
                 >
-                  Email
+                  Your Email
                 </label>
                 <input
                   id="email"
@@ -174,10 +171,6 @@ export default function Contact() {
             >
               {submitting ? 'Sending...' : 'Send'}
             </button>
-
-            <p className="text-xs text-slate-500 mt-2">
-              This form is powered by Netlify Forms.
-            </p>
           </form>
         ) : (
           <div className="bg-slate-900 border border-emerald-700/50 rounded-xl p-6">
@@ -187,7 +180,7 @@ export default function Contact() {
             <p className="text-slate-300">
               I’ll get back to you soon. If it’s urgent, email me at{' '}
               <a
-                href={`mailto:${personalInfo.email}`}
+                href={`mailto:${personalInfo.email}?subject=Inquiry%20from%20your%20portfolio`}
                 className="underline hover:text-emerald-300"
               >
                 {personalInfo.email}

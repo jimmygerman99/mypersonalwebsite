@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { personalInfo } from '../data/content';
 
 export default function Contact() {
@@ -159,7 +159,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={submitting}
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-60 px-6 py-3 rounded-lg transition-colors text-white"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-60 px-6 py-3 rounded-lg transition-colors text-white"
             >
               {submitting ? 'Sending...' : 'Send'}
             </button>

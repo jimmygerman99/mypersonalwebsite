@@ -17,17 +17,17 @@ export const skills = {
 
 export const projects = [
   {
-    title: 'Neural Network Builder',
+    title: 'Machine Learning Models',
     description:
-      'Drag-and-drop, node-based editor for visual neural network design and training',
-    tech: ['Svelte', 'Flask', 'PyTorch', 'REST APIs', 'Figma'],
+      'Classification and prediction models for animal species and music origin',
+    tech: ['Python', 'CNNs', 'PyTorch', 'Pandas'],
     highlights: [
-      'Engineered visual editor in Svelte & SvelteFlow',
-      'Integrated frontend with Flask/PyTorch backend',
-      'Presented to stakeholders, professors, and judges',
+      'Built classification models for American animal species',
+      'Utilized CNNs for high-performing models',
+      'Applied optimization methods and algorithms',
     ],
-    status: 'In Progress',
-    date: 'Nov 2024 - Apr 2025',
+    status: 'Completed',
+    date: 'Mar 2024 - May 2024',
   },
   {
     title: 'Credit Card Redemption Calculator',
@@ -43,18 +43,18 @@ export const projects = [
     date: 'Oct 2024 - Dec 2024',
   },
   {
-    title: 'Machine Learning Models',
+    title: 'Neural Network Builder',
     description:
-      'Classification and prediction models for animal species and music origin',
-    tech: ['Python', 'CNNs', 'PyTorch', 'Pandas'],
+      'Drag-and-drop, node-based editor for visual neural network design and training',
+    tech: ['Svelte', 'Flask', 'PyTorch', 'REST APIs', 'Figma'],
     highlights: [
-      'Built classification models for American animal species',
-      'Utilized CNNs for high-performing models',
-      'Applied optimization methods and algorithms',
+      'Engineered visual editor in Svelte & SvelteFlow',
+      'Integrated frontend with Flask/PyTorch backend',
+      'Presented to stakeholders, professors, and judges',
     ],
     status: 'Completed',
-    date: 'Mar 2024 - May 2024',
-  },
+    date: 'Nov 2024 - Apr 2025',
+  }
 ];
 
 export const experience = [
@@ -128,8 +128,5 @@ export const timeline = [
     year: 'Summer 2025',
     title: 'New-grad SWE + Building',
     event: 'Working on Full Stack Odin Project + traveling the world',
-  },
-  { 
-    year: ''
   },
 ];

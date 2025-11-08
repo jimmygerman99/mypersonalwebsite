@@ -13,7 +13,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold mb-12 text-center"
+          className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center"
         >
           Experience
         </motion.h2>
@@ -27,7 +27,7 @@ export default function Experience() {
               transition={{ delay: index * 0.2 }}
               className="bg-slate-900 p-6 rounded-lg border border-slate-700"
             >
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-0 mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-blue-400">
                     {exp.company}

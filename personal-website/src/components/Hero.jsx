@@ -6,7 +6,10 @@ import headshot from '../assets/images/headshot.jpeg';
 
 export default function Hero({ scrollToSection }) {
   return (
-    <section id="home" className="min-h-[80vh] flex items-center px-6">
+    <section
+      id="home"
+      className="min-h-[80vh] flex items-center px-4 sm:px-6 pt-20 sm:pt-24"
+    >
       {/* Center the whole hero block */}
       <div className="max-w-4xl w-full mx-auto">
         {/* Balanced two-column grid that stays centered */}

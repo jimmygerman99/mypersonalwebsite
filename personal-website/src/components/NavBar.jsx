@@ -6,8 +6,8 @@ export default function Navbar({ activeSection, scrollToSection }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleNavClick = (section) => {
-    scrollToSection(section);
     setIsOpen(false);
+    setTimeout(() => scrollToSection(section), 100);
   };
 
   return (

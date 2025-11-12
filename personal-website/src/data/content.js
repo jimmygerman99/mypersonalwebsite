@@ -119,14 +119,15 @@ export const timeline = [
     event: 'Local PyTorch + browser UI; tested node/flow.',
   },
   {
-    year: 'May 2025',
+    year: 2025,
     title: 'B.S. Computer Science',
-    subtitle: 'University of Cincinnati, GPA 3.42',
+    subtitle: 'University of Cincinnati, GPA 3.42 • May 2025',
     event: 'Dean’s List; systems, full-stack, ML tooling.',
   },
   {
-    year: 'Summer 2025',
+    year: 2025,
     title: 'New-grad SWE + Building',
+    subtitle: 'Summer 2025',
     event: 'Working on Full Stack Odin Project + traveling the world',
   },
 ];

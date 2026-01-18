@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code } from 'lucide-react';
+import { Code, Github, ExternalLink } from 'lucide-react';
 import { projects } from '../data/content';
 
 export default function Projects() {
@@ -24,12 +24,12 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -5 }}
-              className="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-all"
+              className="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-all flex flex-col"
             >
               <div className="flex items-start justify-between mb-3">
                 <Code className="text-blue-400" size={24} />
                 <span
-                  className={`text-xs px-2 py-1 rounded -full ${
+                  className={`text-xs px-2 py-1 rounded-full ${
                     project.status === 'Completed'
                       ? 'bg-green-900 text-green-300'
                       : 'bg-yellow-900 text-yellow-300'
@@ -40,7 +40,7 @@ export default function Projects() {
               </div>
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="text-slate-400 text-sm mb-3">{project.date}</p>
-              <p className="text-slate-300 mb-4">{project.description}</p>
+              <p className="text-slate-300 mb-4 flex-grow">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech) => (
                   <span
@@ -51,7 +51,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <ul className="space-y-1">
+              <ul className="space-y-1 mb-4">
                 {project.highlights.map((highlight, i) => (
                   <li
                     key={i}
@@ -62,6 +62,36 @@ export default function Projects() {
                   </li>
                 ))}
               </ul>
+              {(project.github || project.demo) && (
+                <div className="flex gap-3 mt-auto pt-4 border-t border-slate-700">
+                  {project.github && (
+                    <motion.a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="flex items-center gap-2 text-slate-300 hover:text-blue-400 transition-colors text-sm"
+                    >
+                      <Github size={18} />
+                      Code
+                    </motion.a>
+                  )}
+                  {project.demo && (
+                    <motion.a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="flex items-center gap-2 text-slate-300 hover:text-blue-400 transition-colors text-sm"
+                    >
+                      <ExternalLink size={18} />
+                      Demo
+                    </motion.a>
+                  )}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

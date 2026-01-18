@@ -1,4 +1,4 @@
-import ResumePDF from '../assets/German_James_Resume_Fall2025.pdf';
+import ResumePDF from '../assets/German_Jimmy_Resume_Winter2026.pdf';
 export const personalInfo = {
   name: 'Jimmy German',
   email: 'jgjimmy1@gmail.com',
@@ -28,6 +28,8 @@ export const projects = [
     ],
     status: 'Completed',
     date: 'Mar 2024 - May 2024',
+    github: null,
+    demo: null,
   },
   {
     title: 'Credit Card Redemption Calculator',
@@ -41,6 +43,8 @@ export const projects = [
     ],
     status: 'In Progress',
     date: 'Oct 2024 - Dec 2024',
+    github: null,
+    demo: null,
   },
   {
     title: 'Neural Network Builder',
@@ -54,6 +58,8 @@ export const projects = [
     ],
     status: 'Completed',
     date: 'Nov 2024 - Apr 2025',
+    github: null,
+    demo: null,
   }
 ];
 

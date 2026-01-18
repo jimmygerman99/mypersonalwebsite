@@ -17,12 +17,14 @@ export default function Navbar({ activeSection, scrollToSection }) {
       className="fixed top-0 w-full bg-slate-800/95 backdrop-blur-sm border-b border-slate-700 z-50"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-        <motion.div
+        <motion.button
+          onClick={() => scrollToSection('home')}
           whileHover={{ scale: 1.05 }}
-          className="text-xl font-bold text-blue-400"
+          className="text-xl font-bold text-blue-400 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500/40 rounded"
+          aria-label="Scroll to top"
         >
           JG
-        </motion.div>
+        </motion.button>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8">

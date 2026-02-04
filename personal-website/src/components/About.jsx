@@ -88,6 +88,21 @@ export default function About() {
                   ))}
                 </div>
               </div>
+              <div className="bg-slate-900 p-4 rounded-lg border border-slate-700">
+                <h4 className="font-semibold mb-2 text-slate-300">
+                  Databases &amp; Cloud
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {skills.databases.map((skill) => (
+                    <span
+                      key={skill}
+                      className="bg-slate-800 px-3 py-1 rounded-full text-sm"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>

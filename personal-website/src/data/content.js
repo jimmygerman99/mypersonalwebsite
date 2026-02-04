@@ -6,13 +6,14 @@ export const personalInfo = {
   linkedin: 'https://www.linkedin.com/in/jamesger',
   resume: ResumePDF,
   tagline:
-    'Building intelligent web applications with a focus on machine learning and full-stack development',
+    'Full-stack developer with a passion for building modern, responsive web applications',
 };
 
 export const skills = {
-  languages: ['JavaScript', 'TypeScript', 'Python', 'C++', 'Java', 'SQL'],
-  frameworks: ['React', 'Svelte', 'Flask', 'FastAPI', 'PyTorch', 'Node.js'],
-  ml: ['CNNs', 'RNNs', 'Transformers', 'Supervised & Unsupervised Learning'],
+  languages: ['C', 'C#', 'C++', 'Java', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
+  frameworks: ['React', 'Svelte', 'Vite', 'Next.js', 'Tailwind', 'Flask', 'FastAPI', 'PyTorch', 'Node.js', 'Jest'],
+  ml: ['CNNs', 'RNNs', 'Transformers', 'Supervised & Unsupervised Learning', 'Pandas'],
+  databases: ['MySQL', 'Azure'],
 };
 
 export const projects = [
@@ -42,7 +43,7 @@ export const projects = [
       'Developed MySQL database with encrypted data',
     ],
     status: 'In Progress',
-    date: 'Oct 2024 - Dec 2024',
+    date: 'Oct 2024 - Present',
     github: null,
     demo: null,
   },
@@ -50,11 +51,11 @@ export const projects = [
     title: 'Neural Network Builder',
     description:
       'Drag-and-drop, node-based editor for visual neural network design and training',
-    tech: ['Svelte', 'Flask', 'PyTorch', 'REST APIs', 'Figma'],
+    tech: ['Svelte', 'SvelteFlow', 'Flask', 'REST APIs', 'CI/CD', 'Figma'],
     highlights: [
-      'Engineered visual editor in Svelte & SvelteFlow',
-      'Integrated frontend with Flask/PyTorch backend',
-      'Presented to stakeholders, professors, and judges',
+      'Engineered drag-and-drop editor in Svelte & SvelteFlow',
+      'Developed modular Svelte component library for UI elements',
+      'Implemented CI/CD pipeline for testing and deployment',
     ],
     status: 'Completed',
     date: 'Nov 2024 - Apr 2025',
@@ -65,15 +66,15 @@ export const projects = [
 
 export const experience = [
   {
-    company: 'Siemens',
-    role: 'Backend Software Engineer',
-    location: 'Milford, OH',
-    date: 'Jan 2022 - Dec 2022',
-    description: 'TeamCenter Integration for NX (TCIN)',
+    company: 'Enterprise Controls Group',
+    role: 'Systems Specialist',
+    location: 'Mentor, OH',
+    date: 'Oct 2025 - Present',
+    description: 'Building Automation Systems',
     highlights: [
-      'Debugged 50,000+ C/C++ source files',
-      'Co-led UI development using Windows Presentation Foundation',
-      'Utilized Agile Development and UML diagrams',
+      'Implemented REST-based APIs for secure customer data access',
+      'Diagnosed system-level software and data flow issues',
+      'Developed control logic and commissioned building automation systems',
     ],
   },
   {
@@ -88,13 +89,25 @@ export const experience = [
       'Presented to stakeholders for future use',
     ],
   },
+  {
+    company: 'Siemens',
+    role: 'Backend Software Engineer',
+    location: 'Milford, OH',
+    date: 'Jan 2022 - Dec 2022',
+    description: 'TeamCenter Integration for NX (TCIN)',
+    highlights: [
+      'Debugged 50,000+ C/C++ source files',
+      'Co-led UI development using Windows Presentation Foundation',
+      'Utilized Agile Development and UML diagrams',
+    ],
+  },
 ];
 
 export const timeline = [
   {
     year: 2002,
     title: 'Born in Ohio',
-    event: 'Grew up into tech, travel, outdoors.',
+    event: 'Where it all began.',
   },
   {
     year: 2019,
@@ -132,8 +145,8 @@ export const timeline = [
   },
   {
     year: 2025,
-    title: 'New-grad SWE + Building',
-    subtitle: 'Summer 2025',
-    event: 'Working on Full Stack Odin Project + traveling the world',
+    title: 'Systems Specialist',
+    subtitle: 'Enterprise Controls Group • Oct 2025',
+    event: 'Building automation systems, REST APIs, and control logic.',
   },
 ];

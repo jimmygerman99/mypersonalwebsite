@@ -1,4 +1,4 @@
-import ResumePDF from '../assets/German_Jimmy_Resume_Winter2026.pdf';
+import ResumePDF from '../assets/German_Jimmy_Resume_Spring2026.pdf';
 export const personalInfo = {
   name: 'Jimmy German',
   email: 'jgjimmy1@gmail.com',
@@ -10,9 +10,35 @@ export const personalInfo = {
 };
 
 export const skills = {
-  languages: ['C', 'C#', 'C++', 'Java', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
-  frameworks: ['React', 'Svelte', 'Vite', 'Next.js', 'Tailwind', 'Flask', 'FastAPI', 'PyTorch', 'Node.js', 'Jest'],
-  ml: ['CNNs', 'RNNs', 'Transformers', 'Supervised & Unsupervised Learning', 'Pandas'],
+  languages: [
+    'C',
+    'C#',
+    'C++',
+    'Java',
+    'JavaScript',
+    'TypeScript',
+    'Python',
+    'SQL',
+  ],
+  frameworks: [
+    'React',
+    'Svelte',
+    'Vite',
+    'Next.js',
+    'Tailwind',
+    'Flask',
+    'FastAPI',
+    'PyTorch',
+    'Node.js',
+    'Jest',
+  ],
+  ml: [
+    'CNNs',
+    'RNNs',
+    'Transformers',
+    'Supervised & Unsupervised Learning',
+    'Pandas',
+  ],
   databases: ['MySQL', 'Azure'],
 };
 
@@ -61,7 +87,7 @@ export const projects = [
     date: 'Nov 2024 - Apr 2025',
     github: null,
     demo: null,
-  }
+  },
 ];
 
 export const experience = [
@@ -69,7 +95,7 @@ export const experience = [
     company: 'Enterprise Controls Group',
     role: 'Systems Specialist',
     location: 'Mentor, OH',
-    date: 'Oct 2025 - Present',
+    date: 'Oct 2025 - Jan 2026',
     description: 'Building Automation Systems',
     highlights: [
       'Implemented REST-based APIs for secure customer data access',
@@ -146,7 +172,7 @@ export const timeline = [
   {
     year: 2025,
     title: 'Systems Specialist',
-    subtitle: 'Enterprise Controls Group • Oct 2025',
+    subtitle: 'Enterprise Controls Group • Oct 2025 - Jan 2026',
     event: 'Building automation systems, REST APIs, and control logic.',
   },
 ];

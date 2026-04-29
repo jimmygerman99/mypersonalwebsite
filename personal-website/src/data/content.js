@@ -44,17 +44,32 @@ export const skills = {
 
 export const projects = [
   {
-    title: 'Machine Learning Models',
+    title: 'AtmosCalc — Alaska Airlines Rewards Calculator',
     description:
-      'Classification and prediction models for animal species and music origin',
-    tech: ['Python', 'CNNs', 'PyTorch', 'Pandas'],
+      'Web-based calculator for Alaska Airlines\' Atmos Rewards loyalty program, covering all three earning methods and multiple spend categories',
+    tech: ['JavaScript', 'React', 'Tailwind'],
     highlights: [
-      'Built classification models for American animal species',
-      'Utilized CNNs for high-performing models',
-      'Applied optimization methods and algorithms',
+      'Supports Distance, Cash Spent, and Segments earning methods',
+      'Includes credit card spend, hotels, car rentals, and more',
+      'Built in response to Alaska/Hawaiian merger and the launch of Atmos Rewards',
     ],
     status: 'Completed',
-    date: 'Mar 2024 - May 2024',
+    date: 'Apr 2026',
+    github: null,
+    demo: 'https://atmoscalc.com/',
+  },
+  {
+    title: 'Neural Network Builder',
+    description:
+      'Drag-and-drop, node-based editor for visual neural network design and training',
+    tech: ['Svelte', 'SvelteFlow', 'Flask', 'REST APIs', 'CI/CD', 'Figma'],
+    highlights: [
+      'Engineered drag-and-drop editor in Svelte & SvelteFlow',
+      'Developed modular Svelte component library for UI elements',
+      'Implemented CI/CD pipeline for testing and deployment',
+    ],
+    status: 'Completed',
+    date: 'Nov 2024 - Apr 2025',
     github: null,
     demo: null,
   },
@@ -74,17 +89,17 @@ export const projects = [
     demo: null,
   },
   {
-    title: 'Neural Network Builder',
+    title: 'Machine Learning Models',
     description:
-      'Drag-and-drop, node-based editor for visual neural network design and training',
-    tech: ['Svelte', 'SvelteFlow', 'Flask', 'REST APIs', 'CI/CD', 'Figma'],
+      'Classification and prediction models for animal species and music origin',
+    tech: ['Python', 'CNNs', 'PyTorch', 'Pandas'],
     highlights: [
-      'Engineered drag-and-drop editor in Svelte & SvelteFlow',
-      'Developed modular Svelte component library for UI elements',
-      'Implemented CI/CD pipeline for testing and deployment',
+      'Built classification models for American animal species',
+      'Utilized CNNs for high-performing models',
+      'Applied optimization methods and algorithms',
     ],
     status: 'Completed',
-    date: 'Nov 2024 - Apr 2025',
+    date: 'Mar 2024 - May 2024',
     github: null,
     demo: null,
   },

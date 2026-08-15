@@ -26,7 +26,7 @@ export default function Hero({ scrollToSection }) {
             </h1>
 
             <h2 className="text-2xl md:text-3xl text-slate-400 mb-6">
-              Computer Science Graduate @ University of Cincinnati
+              Tech Sales @ RWX &amp; OH.io
             </h2>
 
             <p className="text-lg md:text-xl text-slate-300 mb-8">

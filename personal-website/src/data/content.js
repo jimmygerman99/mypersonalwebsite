@@ -6,7 +6,7 @@ export const personalInfo = {
   linkedin: 'https://www.linkedin.com/in/jamesger',
   resume: ResumePDF,
   tagline:
-    'Full-stack developer with a passion for building modern, responsive web applications',
+    'CS grad turned GTM. I help engineering teams find better CI/CD workflows through RWX, backed by OH.io. I build things on the side too.',
 };
 
 export const skills = {
@@ -107,6 +107,22 @@ export const projects = [
 
 export const experience = [
   {
+    company: 'RWX / OH.io',
+    role: 'GTM Sales & Venture Scaling',
+    location: 'Remote',
+    date: 'Jun 2026 - Present',
+    description: 'Tech Sales — CI/CD (RWX) via OH.io Venture Firm',
+    links: [
+      { label: 'RWX', url: 'https://www.rwx.com' },
+      { label: 'OH.io', url: 'https://www.oh.io' },
+    ],
+    highlights: [
+      'Driving go-to-market sales for RWX, a CI/CD platform, backed by OH.io',
+      'OH.io is the venture firm supporting and scaling RWX',
+      'Building pipeline, closing deals, and expanding RWX\'s customer base',
+    ],
+  },
+  {
     company: 'Enterprise Controls Group',
     role: 'Systems Specialist',
     location: 'Mentor, OH',
@@ -186,8 +202,20 @@ export const timeline = [
   },
   {
     year: 2025,
+    title: 'Traveled Asia',
+    subtitle: 'Japan, Thailand, Vietnam',
+    event: 'Spent time after graduation traveling across Asia.',
+  },
+  {
+    year: 2025,
     title: 'Systems Specialist',
     subtitle: 'Enterprise Controls Group • Oct 2025 - Jan 2026',
     event: 'Building automation systems, REST APIs, and control logic.',
+  },
+  {
+    year: 2026,
+    title: 'GTM Sales — RWX / OH.io',
+    subtitle: 'Tech Sales, CI/CD • Jun 2026 - Present',
+    event: 'Scaling RWX\'s go-to-market through OH.io, a venture firm backing the CI/CD platform.',
   },
 ];

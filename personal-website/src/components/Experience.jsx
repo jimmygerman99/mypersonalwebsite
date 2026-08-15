@@ -29,8 +29,19 @@ export default function Experience() {
             >
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-0 mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-blue-400">
+                  <h3 className="text-2xl font-bold text-blue-400 flex items-center gap-3 flex-wrap">
                     {exp.company}
+                    {exp.links && exp.links.map((link) => (
+                      <a
+                        key={link.label}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-slate-400 hover:text-blue-400 transition-colors border border-slate-600 hover:border-blue-400 rounded px-2 py-0.5"
+                      >
+                        {link.label} ↗
+                      </a>
+                    ))}
                   </h3>
                   <p className="text-lg text-slate-300">{exp.role}</p>
                   <p className="text-slate-500 text-sm">{exp.description}</p>
